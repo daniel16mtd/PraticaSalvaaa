@@ -1,0 +1,374 @@
+/* ---------------------- IMPORTS --------------------- */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ---------------------- RESET --------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    transition: 0.5s;
+    overflow-x: hidden; /* impede estouro da tela */
+    background-color: #28282a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------- TEMA CLARO --------------------- */
+
+body.tema-claro {
+    background-color: white;
+    color: #2a2829;
+}
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3,
+body.tema-claro p,
+body.tema-claro li {
+    color: #2a2829;
+}
+
+body.tema-claro a {
+    color: #2a2829;
+}
+
+body.tema-claro header h1 {
+    color: #00d5ff;
+    text-shadow: none;
+}
+
+body.tema-claro input {
+    color: #2a2829;
+    background-color: white;
+    border: 1px solid #2a2829;
+    box-shadow: none;
+}
+
+body.tema-claro input:hover {
+    background-color: #2a2829;
+    color: white;
+}
+
+body.tema-claro a:hover {
+    color: #00d5ff;
+    text-shadow: none;
+}
+
+/* ---------------------- HEADER --------------------- */
+
+header{
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    text-shadow:0 0 1rem #00d5ff;
+    font-size: 3.5vw;
+    color: white;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+
+header input{
+    transition: 0.8s;
+    width: 10vw;
+    min-width: 120px;
+    padding: 1vw;
+    border: none;
+    border-radius: 40% 20% 20%;
+    color: white;
+    background-color: #00ffea;
+    box-shadow: 0 0 1rem #00ffea;
+    text-shadow: 0 0 .4rem white;
+    font-size: 1rem;
+}
+
+header input:hover{
+    transform: scale(1.1);
+    border: 1px solid #00ffea;
+}
+
+header ul{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    gap: 3vw;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 2%;
+   
+}
+
+header ul a{
+    font-size: 1rem;
+    color: white;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: .3s;
+}
+
+header ul a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    border: 1px solid #2fb8ac;
+    color: #00ffea;
+    text-shadow: 0 0 .3rem #00ffea;
+    padding: 1rem;
+}
+
+/* ---------------------- SEÇÕES --------------------- */
+
+section{
+    margin: 10% 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section h1{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 4vw;
+}
+
+/* ---------------------- BOTÕES --------------------- */
+
+hgroup#but{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+input{
+    cursor: pointer;
+}
+
+hgroup#but input{
+    transition: .4s;
+    font-family: "Open Sans", sans-serif;
+    padding: 1%;
+    border-radius: .7rem;
+    border: none;
+    font-size: 1.4vw;
+    color: white;
+    background-color: #00ffea;
+    box-shadow: 0 0 1rem #00ffea;
+}
+
+hgroup#but input:hover{
+    transform: scale(1.1);
+    background-color: #2a2829;
+    color: #00ffea;
+    border: 1px solid #00ffea;
+}
+
+/* ---------------------- FOOD --------------------- */
+
+section#food{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    text-align: center;
+    align-items: center;
+}
+
+section#food ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+section#food ul li{
+    width: 100%;
+    padding: 2%;
+    border-radius: 1rem;
+    border: 1px solid #2fb8ac;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    justify-content: center;
+}
+
+section#food ul li img{
+    width: 40%;
+    border-radius: .5rem;
+    max-width: 200px;
+}
+
+section#food ul li h3{
+    font-size: 2vw;
+    border-bottom:3rem solid #00ffea;
+    padding: 2%;
+    border-radius: .5rem;
+}
+
+/* ---------------------- JOGOS --------------------- */
+
+section#jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#jogo p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3vw;
+    margin-top: 5%;
+    border-bottom: .5rem solid #00ffea;
+    padding-bottom: 1rem;
+}
+
+section#jogo main{
+    display: flex;
+    padding: 2%;
+    border-radius: .24rem;
+    margin-top: 3%;
+    gap: 2%;
+   
+    justify-content: center;
+    
+}
+
+section#jogo main div{
+    margin: 2%;
+}
+
+section#jogo main div img{
+    width: 0vw;
+    min-width: 180px;
+    transition: .5s;
+    border-radius: 1rem;
+}
+
+
+section#jogo main div ul{
+    list-style: none;
+    text-align: start;
+}
+
+section#jogo main div img:hover{
+    transform: scale(1.1);
+}
+
+section#jogo main div h2{
+    font-size: 2vw;
+    text-shadow: 0 0 .7rem #73e2f8;
+}
+
+/* ---------------------- OBJETIVOS --------------------- */
+
+section#objs main img{
+    width: 50%;
+    min-width: 200px;
+}
+
+section#objs main{
+    display: flex;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+
+section#objs ul li p{
+    font-size: 7px;
+}
+
+section#objs ul{
+    border-bottom: .2rem solid #00ffea;
+    padding: 2%;
+    margin: 5%;
+    text-align: start;
+    font-size: 2.3vw;
+    display: grid;
+    gap: 2%;
+}
+
+/* ---------------------- ABILIDADES --------------------- */
+
+section#abilit main{ display: flex; margin: 2%; gap: 5%; } section#abilit main img{ width: 100%; border-radius: .7rem; box-shadow: 0 0 2rem #00ffea; } section#abilit main hgroup{ font-size: 2vw; color: #00ffea; text-shadow: 1px 1px 10px #00ffea; } section#abilit main p{ font-size: 1.7vw; margin: 2%; }
+
+/* ---------------------- FOOTER --------------------- */
+
+footer{
+    margin-top: 20%;
+    background-color: #2fb8ac;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.5vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer a{
+    color: white;
+}
+
+/* ---------------------- RESPONSIVO --------------------- */
+
+@media (max-width: 900px){
+
+    section h1{
+        font-size: 8vw;
+    }
+
+    hgroup#but input{
+        font-size: 4vw;
+    }
+
+    section#food ul{
+        grid-template-columns: 1fr;
+    }
+
+    section#food ul li h3{
+        font-size: 4vw;
+    }
+
+    section#jogo p{
+        font-size: 6vw;
+    }
+}
+
+
+
+/*---------------------------------------------------*/
+
+/* tema claro */
+.temaClaro {
+    background-color: white;
+    color: #2a2829;
+}
+
+.temaClaro a {
+    color: #2a2829;
+}
+
+.temaClaro input:hover {
+    background-color: #2a2829;
+    color: white;
+}
+
+/* tema escuro */
+.temaEscuro {
+    background-color: #28374e;
+    color: white;
+}
+
+.temaEscuro a {
+    color: white;
+}
+
+.temaEscuro input:hover {
+    background-color: white;
+    color: #28374e;
+}
